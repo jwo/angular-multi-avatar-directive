@@ -19,10 +19,9 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-app="YourApp">
 
-    <div class="container">
-      <!-- Example row of columns -->
+    <div class="container" ng-controller='UsersController'>
       <div class="row">
         <div class="col-lg-4">
           <h2>With Facebook ID</h2>
@@ -36,6 +35,10 @@
           <h2>With Email</h2>
           <multi-avatar data-email="jesse@rubyoffrails.com"/>
         </div>
+        <div class="col-lg-4">
+          <h2>Blank</h2>
+          <multi-avatar data-facebook-id='' data-github-username='' data-email=''>
+        </div>
       </div>
 
       <hr>
@@ -46,8 +49,12 @@
     </div> <!-- /container -->
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script src="components/jquery.min.js"></script>
     <script src="components/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="../src/md5.js"></script>
+    <script src="../src/multi-avatar-directive.js"></script>
   </body>
 </html>
 
