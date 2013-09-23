@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Jesse Wolgamott">
+
+    <title>Example Angular Directives with Facebook, GitHub, and Gravatar Fallback</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="components/html5shiv.js"></script>
+      <script src="components/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>With Facebook ID</h2>
+          <multi-avatar data-facebook-id="717976707"/>
+        </div>
+        <div class="col-lg-4">
+          <h2>With GitHub Username</h2>
+          <multi-avatar data-github-username="jwo"/>
+       </div>
+        <div class="col-lg-4">
+          <h2>With Email</h2>
+          <multi-avatar data-email="jesse@rubyoffrails.com"/>
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Jesse Wolgamott 2013</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <script src="components/jquery.min.js"></script>
+    <script src="components/bootstrap.min.js"></script>
+  </body>
+</html>
+
